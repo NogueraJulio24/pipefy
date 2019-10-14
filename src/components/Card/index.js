@@ -2,14 +2,14 @@ import React from 'react';
 
 import { Container, Label } from './styles';
 
-export default function Card() {
+export default function Card({data}) {
   return (
     <Container>
         <header>
-            <Label color="#7159c1" />
+            <Label color={data.labels} />
         </header>
-        <p>Hacer migración</p>
-        <img src="https://api.adorable.io/avatars/259/abott@adorable.png4" alt="" />
+        <p>{data.content}</p>
+        <img src={data.user} alt="" />
     </Container>
   );
 }
