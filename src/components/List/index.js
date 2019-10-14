@@ -1,9 +1,17 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { MdAdd } from 'react-icons/md';
+import { Container } from './styles';
 
 export default function List() {
   return (
-    <div />
+    <Container>
+      <header>
+        <h2>Tareas</h2>
+        <button type="button">
+          <MdAdd size={24} color="#FFF" />
+        </button>
+      </header>
+    </Container>
   );
 }
